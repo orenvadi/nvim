@@ -31,8 +31,9 @@ vim.keymap.set("n", "gl", function()
 end, { noremap = true, silent = true })
 
 del("n", "<leader>bb")
-map("n", "<leader>bb", ":bnext<CR>", { desc = "Next Buffer" })
-map("n", "<leader>bn", ":bprevious<CR>", { desc = "Previous Buffer" })
+map("n", "<leader>bn", ":bnext<CR>", { desc = "Next Buffer" })
+map("n", "<leader>bb", ":bprevious<CR>", { desc = "Previous Buffer" })
 
 -- Commenting
 map("n", "gk", ":normal gcc<CR>", { desc = "Toggle comment" })
+map("v", "gk", ":normal gcc<CR>", { desc = "Toggle comment" })

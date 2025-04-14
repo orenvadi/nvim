@@ -9,6 +9,7 @@ vim.g.snacks_animate = false
 local opt = vim.opt
 
 opt.relativenumber = false
+opt.swapfile = false
 
 -- neovide config
 if vim.g.neovide then
